@@ -1,0 +1,11 @@
+﻿@model IEnumerable<PartyInvite.Models.GuestResponse>
+
+@if(Model.Count() == 1)
+{
+    <p> You are the first who accept :-)</p>
+}
+else
+{
+    <p> Here is the list of cool people coming: @string.Join(", ", Model.Select(x=>x.Name))</p>
+}
+
