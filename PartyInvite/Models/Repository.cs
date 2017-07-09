@@ -27,6 +27,7 @@ namespace PartyInvite.Models
             {
                 responses.Add(key, newResponse);
             }
+
         }
 
         public static IEnumerable<GuestResponse> Responses
